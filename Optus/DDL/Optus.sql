@@ -3,3 +3,8 @@ GO
 
 USE optus;
 GO
+
+CREATE TABLE artista(
+	IdArtista INT PRIMARY KEY IDENTITY NOT NULL,
+	Nome VARCHAR (50)
+);
