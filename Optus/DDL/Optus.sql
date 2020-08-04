@@ -29,3 +29,11 @@ CREATE TABLE estiloAlbum(
 	IdAlbum INT FOREIGN KEY REFERENCES album (IdAlbum),
 	IdEstilo INT FOREIGN KEY REFERENCES estilo (IdEstilo)
 );
+
+CREATE TABLE usuario(
+	IdUsuario INT PRIMARY KEY IDENTITY NOT NULL,
+	Nome VARCHAR (20),
+	Senha VARCHAR (20),
+	Email VARCHAR (40),
+	Permissao BINARY
+);
