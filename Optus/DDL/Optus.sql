@@ -8,3 +8,24 @@ CREATE TABLE artista(
 	IdArtista INT PRIMARY KEY IDENTITY NOT NULL,
 	Nome VARCHAR (50)
 );
+
+CREATE TABLE estilo(
+	IdEstilo INT PRIMARY KEY IDENTITY NOT NULL,
+	Estilo VARCHAR (25)
+);
+
+CREATE TABLE album(
+	IdAlbum INT PRIMARY KEY IDENTITY NOT NULL,
+	Nome VARCHAR (50),
+	DataLancamento DATE,
+	Localizacao VARCHAR (80),
+	QtdMinutos FLOAT,
+
+	IdArtista INT FOREIGN KEY REFERENCES artista (IdArtista)
+);
+
+CREATE TABLE estiloAlbum(
+	IdEstiloAlbum INT PRIMARY KEY IDENTITY NOT NULL,
+	IdAlbum INT FOREIGN KEY REFERENCES album (IdAlbum),
+	IdEstilo INT FOREIGN KEY REFERENCES estilo (IdEstilo)
+);
