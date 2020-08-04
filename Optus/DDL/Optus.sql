@@ -1,0 +1,5 @@
+CREATE DATABASE optus;
+GO
+
+USE optus;
+GO
