@@ -1,9 +1,9 @@
 USE optus;
 
-INSERT INTO artista (Nome) VALUES('Doja Cat');
+INSERT INTO artista (Nome) VALUES('Travis Scott');
 
 INSERT INTO album (Nome, DataLancamento, Localizacao, QtdMinutos, IdArtista) 
-			VALUES('Die Lit', '2018-05-11', 'usa', 57.39, 2);
+			VALUES('ASTROWORLD', '2018-08-3', 'usa', 58.00, 5);
 
 INSERT INTO estilo (Estilo) VALUES ('trap, hip-hop, rap');
 
