@@ -3,9 +3,9 @@ USE optus;
 INSERT INTO artista (Nome) VALUES('Playboi Carti');
 
 INSERT INTO album (Nome, DataLancamento, Localizacao, QtdMinutos, IdArtista) 
-			VALUES('Blonded', '2016-08-16', 'usa', 60, 1);
+			VALUES('Die Lit', '2018-05-11', 'usa', 57.39, 2);
 
-INSERT INTO estilo (Estilo) VALUES ('hip-hop');
+INSERT INTO estilo (Estilo) VALUES ('trap, hip-hop, rap');
 
 SELECT * FROM artista;
 SELECT * FROM album;
