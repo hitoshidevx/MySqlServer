@@ -4,15 +4,15 @@ USE clinica;
 /*INSERT - inserção de dados*/
 INSERT INTO clinica (Nome, Endereco) VALUES ('PetMania', 'Vila Mogilar');
 
-INSERT INTO veterinario (Nome, IdClinica) VALUES ('Felipe T.', 1);
+INSERT INTO veterinario (Nome, IdClinica) VALUES ('Elaine Y.', 2);
 
-INSERT INTO dono (Nome) VALUES ('Júlia');
+INSERT INTO dono (Nome) VALUES ('Breno');
 
-INSERT INTO espécie (Especie) VALUES ('Persa');
+INSERT INTO espécie (Especie) VALUES ('Vira-Lata');
 
-INSERT INTO raça (Raça, IdEspecie) VALUES ('Gato', 1);
+INSERT INTO raça (Raça, IdEspecie) VALUES ('Cachorro', 4);
 
-INSERT INTO pet (Nome, DataNascimento, IdDono, IdRaca) VALUES('Skye', '2019-01-21T14:10:00', 1, 2);
+INSERT INTO pet (Nome, DataNascimento, IdDono, IdRaca) VALUES('Scooby', '2019-01-01T12:00:00', 2, 6);
 
 /*DQL de consulta simples*/
 SELECT * FROM clinica;
@@ -28,4 +28,4 @@ UPDATE veterinario SET
 WHERE IdVeterinario = 2;
 
 /*DELETE - Deletar Dados (NÃO ESQUECER DO WHERE!!)*/
-DELETE FROM raça WHERE IdRaca = 1;
+DELETE FROM raça WHERE IdRaca = 4;
