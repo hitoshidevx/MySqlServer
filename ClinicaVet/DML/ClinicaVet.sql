@@ -16,16 +16,16 @@ INSERT INTO pet (Nome, DataNascimento, IdDono, IdRaca) VALUES('Scooby', '2019-01
 
 /*DQL de consulta simples*/
 SELECT * FROM clinica;
-SELECT * FROM veterinario;
 SELECT * FROM dono;
-SELECT * FROM espécie;
-SELECT * FROM raça;
 SELECT * FROM pet;
+SELECT * FROM raça;
+SELECT * FROM espécie;
+SELECT * FROM veterinario;
 
 /*UPDATE - Alterar dados (NÃO ESQUECER DO WHERE!!)*/
-UPDATE veterinario SET
-		IdClinica = 2
-WHERE IdVeterinario = 2;
+UPDATE pet SET
+		IdDono = 4
+WHERE IdPet = 4;
 
 /*DELETE - Deletar Dados (NÃO ESQUECER DO WHERE!!)*/
 DELETE FROM raça WHERE IdRaca = 4;
