@@ -1,6 +1,6 @@
 USE optus;
 
-INSERT INTO artista (Nome) VALUES('Frank Ocean');
+INSERT INTO artista (Nome) VALUES('Playboi Carti');
 
 INSERT INTO album (Nome, DataLancamento, Localizacao, QtdMinutos, IdArtista) 
 			VALUES('Blonded', '2016-08-16', 'usa', 60, 1);
