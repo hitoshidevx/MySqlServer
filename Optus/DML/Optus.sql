@@ -10,5 +10,3 @@ INSERT INTO estilo (Estilo) VALUES ('trap, hip-hop, rap');
 SELECT * FROM artista;
 SELECT * FROM album;
 SELECT * FROM estilo;
-
-DELETE FROM artista WHERE IdArtista = 3;
