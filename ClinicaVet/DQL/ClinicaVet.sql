@@ -17,3 +17,36 @@ SELECT * FROM pet ORDER BY Nome;
 
 --Seleção de dados ordenados por ordem DECRESCENTE.
 SELECT * FROM pet ORDER BY Nome DESC;
+
+/*DQL - Join*/
+-- INNER JOIN
+SELECT 
+	veterinario.Nome,
+	clinica.Nome
+FROM clinica
+	INNER JOIN veterinario ON clinica.IdClinica = veterinario.IdVeterinario
+;
+
+-- LEFT JOIN
+SELECT 
+	veterinario.Nome,
+	clinica.Nome
+FROM clinica
+	LEFT JOIN veterinario ON clinica.IdClinica = veterinario.IdVeterinario
+;
+
+-- RIGHT JOIN
+SELECT 
+	veterinario.Nome,
+	clinica.Nome
+FROM clinica
+	RIGHT JOIN veterinario ON clinica.IdClinica = veterinario.IdVeterinario
+;
+
+-- FULL OUTER JOIN
+SELECT 
+	veterinario.Nome,
+	clinica.Nome
+FROM clinica
+	FULL OUTER JOIN veterinario ON clinica.IdClinica = veterinario.IdVeterinario
+;
